@@ -4,261 +4,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f8f6f2">
-  <meta name="description" content="Ivory Aesthetics — Hair. Skin. Therapy. Discover beauty and self-care treatments in a refined, relaxing setting.">
-
+  <meta name="theme-color" content="#10143d">
+  <meta name="description" content="Ivory Aesthetics — Hair. Skin. Therapy. Discover beauty and wellness treatments in a calm, luxurious setting.">
   <title>Ivory Aesthetics | Hair. Skin. Therapy.</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="page-loader">
-    <img src="logo.png" alt="Ivory Aesthetics logo">
+  <div class="loader" id="loader">
+    <div class="loader-logo">IVORY</div>
     <span>HAIR. SKIN. THERAPY.</span>
+    <div class="loader-line"></div>
   </div>
 
   <header class="navbar">
     <a href="#home" class="brand">
-      <img src="logo.png" alt="Ivory Aesthetics">
-      <span>IVORY AESTHETICS</span>
+      <img src="logo.png" alt="Ivory Aesthetics logo" class="brand-logo">
+      <span>
+        <strong>IVORY AESTHETICS</strong>
+        <small>HAIR. SKIN. THERAPY.</small>
+      </span>
     </a>
 
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+      <span></span><span></span>
     </button>
 
-    <nav class="navigation">
+    <nav class="nav-links" id="navLinks">
       <a href="#home">Home</a>
-      <a href="#about">Our Story</a>
-      <a href="#services">Treatments</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#gallery">Gallery</a>
-      <a href="#contact" class="nav-cta">Get in Touch</a>
+      <a href="#contact" class="nav-book">Get in touch</a>
     </nav>
   </header>
 
   <main>
-
     <section class="hero" id="home">
       <div class="hero-image"></div>
-      <div class="hero-shade"></div>
+      <div class="hero-overlay"></div>
 
-      <div class="hero-content">
-        <p class="eyebrow hero-eyebrow">THE ART OF SELF-CARE</p>
-
-        <h1>
-          Beauty in<br>
-          every <em>moment.</em>
-        </h1>
-
+      <div class="hero-content reveal">
+        <p class="eyebrow light">A MOMENT JUST FOR YOU</p>
+        <h1>Beauty in every<br><em>moment.</em></h1>
         <p class="hero-description">
-          A place to pause, unwind and rediscover your glow.
-          Experience beauty and care designed around you.
+          Discover the art of self-care through beauty, relaxation
+          and treatments designed around you.
         </p>
-
-        <a href="#services" class="light-button">
-          Discover Our Treatments <span>↗</span>
+        <a href="#services" class="button button-light">
+          Explore our services <span>↗</span>
         </a>
       </div>
 
       <div class="hero-bottom">
-        <span>HAIR. SKIN. THERAPY.</span>
-        <span class="scroll-indicator">SCROLL TO EXPLORE ↓</span>
+        <span>BEAUTY · WELLNESS · SELF-CARE</span>
+        <span>01 — 05</span>
       </div>
-
-      <div class="hero-decoration">IA</div>
+      <div class="hero-scroll">SCROLL TO EXPLORE ↓</div>
     </section>
 
     <section class="intro section-padding" id="about">
       <div class="intro-image reveal">
         <img
-          src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1100&q=85"
-          alt="Relaxing facial treatment"
-        >
-        <span class="image-label">A MOMENT FOR YOU</span>
+          src="https://images.unsplash.com/photo-1761718209708-9ab9ba1c7252?auto=format&fit=crop&w=1200&q=85"
+          alt="Relaxing facial skincare treatment"
+          loading="lazy">
+        <div class="image-label">YOUR TIME. YOUR MOMENT.</div>
       </div>
 
-      <div class="intro-content reveal">
-        <p class="eyebrow">WELCOME TO IVORY AESTHETICS</p>
-
-        <h2>
-          Your beauty.<br>
-          Your <em>sanctuary.</em>
-        </h2>
-
+      <div class="intro-copy reveal">
+        <p class="eyebrow">WELCOME TO IVORY</p>
+        <h2>A little time for yourself can make <em>all the difference.</em></h2>
+        <div class="small-line"></div>
         <p>
-          We believe self-care is more than a routine.
-          It is an opportunity to slow down, feel refreshed
-          and give yourself the attention you deserve.
+          At Ivory Aesthetics, beauty is more than a routine.
+          It is an experience of care, confidence and relaxation.
         </p>
-
         <p>
-          From hair care and skincare to relaxing treatments,
-          discover a beauty experience centred around you.
+          From skin and hair treatments to moments of pure relaxation,
+          we believe every visit should leave you feeling refreshed
+          and renewed.
         </p>
-
-        <a href="#contact" class="text-link">
-          Your moment starts here <span>↗</span>
-        </a>
+        <a href="#contact" class="text-link">Discover your experience <span>↗</span></a>
       </div>
     </section>
 
     <section class="services section-padding" id="services">
       <div class="section-heading reveal">
         <p class="eyebrow">THE IVORY EXPERIENCE</p>
-        <h2>Designed around <em>you.</em></h2>
-        <p>
-          Explore our beauty and self-care services.
-        </p>
+        <h2>Care that feels like <em>you.</em></h2>
+        <p>Explore our range of beauty and wellness services.</p>
       </div>
 
       <div class="service-grid">
-
         <article class="service-card reveal">
           <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=850&q=85"
-              alt="Facial skincare treatment"
-            >
+            <img src="https://images.unsplash.com/photo-1761718209793-cb6d348831e0?auto=format&fit=crop&w=1000&q=85" alt="Professional facial treatment" loading="lazy">
             <span class="service-number">01</span>
           </div>
           <div class="service-info">
             <h3>Facials</h3>
-            <p>Give your skin a little extra care and attention.</p>
-            <a href="#contact">Enquire about this service ↗</a>
+            <p>Give your skin the attention it deserves with a refreshing skincare experience.</p>
+            <a href="#contact">Enquire about facials <span>↗</span></a>
           </div>
         </article>
 
         <article class="service-card reveal">
           <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=850&q=85"
-              alt="Relaxing massage experience"
-            >
+            <img src="https://images.unsplash.com/photo-1731355774353-4131a8e13e55?auto=format&fit=crop&w=1000&q=85" alt="Relaxing spa massage" loading="lazy">
             <span class="service-number">02</span>
           </div>
           <div class="service-info">
             <h3>Massages</h3>
-            <p>Take time to unwind and enjoy a moment of relaxation.</p>
-            <a href="#contact">Enquire about this service ↗</a>
+            <p>Slow down, unwind and enjoy a moment dedicated to relaxation.</p>
+            <a href="#contact">Enquire about massages <span>↗</span></a>
           </div>
         </article>
 
         <article class="service-card reveal">
           <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=850&q=85"
-              alt="Beauty care treatment"
-            >
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1000&q=85" alt="Beauty and skincare treatment" loading="lazy">
             <span class="service-number">03</span>
           </div>
           <div class="service-info">
             <h3>Waxing</h3>
-            <p>Personal care and smooth, confident results.</p>
-            <a href="#contact">Enquire about this service ↗</a>
+            <p>Enjoy a smooth, cared-for finish with our personal waxing services.</p>
+            <a href="#contact">Enquire about waxing <span>↗</span></a>
           </div>
         </article>
 
         <article class="service-card reveal">
           <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=850&q=85"
-              alt="Professional hair styling"
-            >
+            <img src="https://images.unsplash.com/photo-1675034743339-0b0747047727?auto=format&fit=crop&w=1000&q=85" alt="Hair styling in a salon" loading="lazy">
             <span class="service-number">04</span>
           </div>
           <div class="service-info">
             <h3>Hair Care</h3>
-            <p>Give your hair the care and attention it deserves.</p>
-            <a href="#contact">Enquire about this service ↗</a>
+            <p>Give your hair the care and attention it needs to look and feel beautiful.</p>
+            <a href="#contact">Enquire about hair care <span>↗</span></a>
           </div>
         </article>
 
         <article class="service-card reveal">
           <div class="service-image">
-            <img
-              src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=850&q=85"
-              alt="Eyelash beauty treatment"
-            >
+            <img src="https://images.unsplash.com/photo-1772235616130-b80e12f0ab7a?auto=format&fit=crop&w=1000&q=85" alt="Eyelash extension treatment" loading="lazy">
             <span class="service-number">05</span>
           </div>
           <div class="service-info">
             <h3>Eyelash Extensions</h3>
-            <p>Enhance your look with beautifully applied lashes.</p>
-            <a href="#contact">Enquire about this service ↗</a>
+            <p>Enhance your natural beauty with beautifully styled lashes.</p>
+            <a href="#contact">Enquire about lashes <span>↗</span></a>
           </div>
         </article>
-
       </div>
     </section>
 
-    <section class="statement">
-      <div class="statement-content reveal">
-        <span class="statement-mark">“</span>
-        <h2>
-          Make time for<br>
-          <em>the beautiful things.</em>
-        </h2>
-        <p>IVORY AESTHETICS · HAIR. SKIN. THERAPY.</p>
+    <section class="quote-section">
+      <div class="quote-content reveal">
+        <p class="eyebrow light">THE ART OF SELF-CARE</p>
+        <h2>Because feeling good<br>should never be <em>an occasion.</em></h2>
+        <span class="quote-mark">✦</span>
       </div>
     </section>
 
     <section class="gallery section-padding" id="gallery">
       <div class="section-heading reveal">
-        <p class="eyebrow">A LITTLE INSPIRATION</p>
-        <h2>The beauty of <em>slowing down.</em></h2>
+        <p class="eyebrow">A GLIMPSE OF IVORY</p>
+        <h2>The beauty of <em>taking a moment.</em></h2>
+        <p>A little inspiration for your next self-care experience.</p>
       </div>
 
       <div class="gallery-grid">
-        <img class="reveal"
-          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=900&q=85"
-          alt="Peaceful spa setting">
-
-        <img class="gallery-tall reveal"
-          src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=900&q=85"
-          alt="Skincare products">
-
-        <img class="reveal"
-          src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=900&q=85"
-          alt="Relaxing wellness experience">
+        <div class="gallery-item gallery-tall reveal">
+          <img src="https://images.unsplash.com/photo-1758448093806-88b2089068ab?auto=format&fit=crop&w=1000&q=85" alt="Elegant modern reception interior" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1639162906614-0603b0ae95fd?auto=format&fit=crop&w=1000&q=85" alt="Spa massage treatment" loading="lazy">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1675034743339-0b0747047727?auto=format&fit=crop&w=1000&q=85" alt="Hair care and styling" loading="lazy">
+        </div>
       </div>
-      <p class="gallery-note">Illustrative imagery — to be replaced with approved business photographs.</p>
     </section>
 
-    <section class="contact section-padding" id="contact">
+    <section class="contact-section section-padding" id="contact">
       <div class="contact-inner reveal">
-        <p class="eyebrow">YOUR TIME. YOUR MOMENT.</p>
-        <h2>Ready to feel <em>refreshed?</em></h2>
-        <p>
-          We'd love to hear from you.
-          Get in touch to enquire about our services and appointments.
-        </p>
-        <a href="mailto:" class="primary-button" id="contact-button">
-          Get in Touch <span>↗</span>
+        <p class="eyebrow light">YOUR NEXT MOMENT STARTS HERE</p>
+        <h2>Ready to make time<br>for <em>yourself?</em></h2>
+        <p>Get in touch with Ivory Aesthetics to enquire about services and appointments.</p>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="button button-light">
+          Connect with us <span>↗</span>
         </a>
+        <small>Appointment details and service availability can be confirmed directly.</small>
       </div>
     </section>
-
   </main>
 
-  <footer>
-    <a href="#home" class="footer-brand">
-      <img src="logo.png" alt="">
-      <span>IVORY AESTHETICS</span>
-    </a>
-
+  <footer class="footer">
+    <a href="#home" class="footer-brand">IVORY AESTHETICS</a>
     <p>HAIR. SKIN. THERAPY.</p>
-
-    <div class="footer-line"></div>
-
-    <small>© 2026 Ivory Aesthetics. All rights reserved.</small>
-    <small class="credit">Website concept by NextBuild Web Services.</small>
+    <span>© <span id="year"></span> Ivory Aesthetics. All rights reserved.</span>
   </footer>
 
   <script src="script.js"></script>
